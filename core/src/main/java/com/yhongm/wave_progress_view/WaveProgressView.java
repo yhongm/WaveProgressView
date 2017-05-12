@@ -218,7 +218,7 @@ public class WaveProgressView extends View {
     }
 
     /**
-     * 画水滴飞溅的效果
+     * 画两侧水滴飞溅的效果，并且随机生成水滴
      *
      * @param canvas
      * @param x
@@ -321,9 +321,6 @@ public class WaveProgressView extends View {
     private void pushRandomDrag(int y) {
         Random r = new Random();
         for (int i = 0; i < 20; i++) {
-//            if (y < 50) {
-//                y = 50;
-//            }
             int randomY = r.nextInt(y);
             if (mLeftHashMapPath.containsKey(randomY)) {
                 Float rightValue = mRightHashMapPath.get(randomY);
@@ -342,7 +339,7 @@ public class WaveProgressView extends View {
     }
 
     /**
-     * 画水滴的移动
+     * 画水滴溅起的溅起
      *
      * @param canvas
      * @param x
