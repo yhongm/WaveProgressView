@@ -12,7 +12,6 @@ import android.graphics.PathMeasure;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -66,7 +65,6 @@ public class WaveProgressView extends View {
         mCircleColor = typedArray.getColor(R.styleable.WaveProgressView_circleColor, mWaterColor);
 
         defaultProgress = typedArray.getFloat(R.styleable.WaveProgressView_progress, 0);
-        Log.i("WaveProgressView", "17:32/init:progress:" + defaultProgress);// yhongm 2017/05/11 17:32
         initPaint();
         initAnimator();
 
