@@ -339,7 +339,7 @@ public class WaveProgressView extends View {
     }
 
     /**
-     * 画水滴溅起的溅起
+     * 画水滴溅起沿着路径
      *
      * @param canvas
      * @param x
