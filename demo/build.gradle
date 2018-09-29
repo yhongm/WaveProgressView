@@ -24,12 +24,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
 
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation project(path: ':core')
+    implementation 'com.github.yhongm:WaveProgressView:master'
 }
