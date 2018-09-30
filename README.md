@@ -23,7 +23,18 @@
         	}
 ```
 ### 1，布局文件添加以下属性
+```
+<com.yhongm.wave_progress_view.WaveProgressView
+        android:id="@+id/wave_progress_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:circleColor="#e38854"
+        app:progress="0"
+        app:waterColor="#5488e3" />
 
+```
+### 属性说明
 #### app:circleColor 圆环颜色
 #### app:progress 初始进度
 #### app:waterColor 水滴和水波的颜色
