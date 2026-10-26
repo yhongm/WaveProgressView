@@ -41,3 +41,9 @@
 #### app:waterColor 水滴和水波的颜色
 
 ### 2，setProgress() 方法设置当前的进度 
+
+// adb test 1792983716
+
+// device verify 1792983996
+
+// v2 1792984143
